@@ -8,29 +8,29 @@
 ---
 5. In postcss.config.js add this code 
 
-`module.exports = {
+module.exports = {
     plugins: [
         require('tailwindcss'),
         require('autoprefixer')
     ],
-}`
+}
 ---
 6. create "style" folder in src folder and add "main.css" and "tailwind.css"
 ---
 7. Add this code to "tailwind.css"
-`@tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities;`
+@tailwind utilities;
 ---
 8. Add this code to package.json
 
- `"scripts": {
+ "scripts": {
     "start": "npm run build:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css" : "postcss src/styles/tailwind.css -o src/styles/main.css" 
-  },`
+  },
 ---
 9. yarn build:css   
 ---
@@ -38,4 +38,4 @@
 
 
 
- # TailwindAndReact
+
